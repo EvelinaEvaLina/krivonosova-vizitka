@@ -85,8 +85,8 @@
 
     /* Portrait — round */
     .portrait-wrap {
-      width: 148px;
-      height: 148px;
+      width: 164px;
+      height: 164px;
       border-radius: 50%;
       overflow: hidden;
       border: 4px solid rgba(255,255,255,0.88);
@@ -95,6 +95,8 @@
       position: relative; z-index: 1;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
+      background: #f0fbf5;
+      padding: 10px;
     }
     .portrait-wrap:hover {
       transform: scale(1.06);
@@ -103,7 +105,7 @@
     .portrait-wrap img {
       width: 100%; height: 100%;
       object-fit: contain;
-      background: #f0fbf5;
+      display: block;
     }
 
     .name {
@@ -492,7 +494,7 @@
       body { padding: 0 0 40px; }
       .card { border-radius: 0; }
       .header { padding: 28px 18px 26px; }
-      .portrait-wrap { width: 128px; height: 128px; }
+      .portrait-wrap { width: 148px; height: 148px; padding: 8px; }
       .name { font-size: 26px; }
       .body { padding: 20px 16px; }
       .wants-grid { gap: 8px; }
